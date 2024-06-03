@@ -1,0 +1,13 @@
+[Unit]
+Description=Concordia - Mail Send Daemon
+After=basic.target
+
+[Service]
+Type=simple
+ExecStart=/var/concordia/bin/mail-send
+User=concordia
+Group=concordia
+Restart=always
+
+[Install]
+WantedBy=basic.target

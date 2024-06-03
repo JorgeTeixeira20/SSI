@@ -1,0 +1,13 @@
+[Unit]
+Description=Concordia - Mail Fulfillment Daemon
+After=basic.target
+
+[Service]
+Type=simple
+ExecStart=/var/concordia/bin/mail-lspawn
+User=root
+Group=root
+Restart=always
+
+[Install]
+WantedBy=basic.target
